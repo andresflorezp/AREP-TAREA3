@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AREP-TALLER-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AREP-TALLER/target/AREP-TALLER-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

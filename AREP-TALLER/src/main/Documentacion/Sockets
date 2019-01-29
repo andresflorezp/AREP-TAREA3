@@ -1,0 +1,27 @@
+Los sockets permiten crear  una conexion entre aplicacion pero corriendo varias al mismo tiempo es decir un socket es la suma de una
+SOCKET = IP + PUERTO
+
+Permiten crear la comunicacion entre cliente servidor
+
+Java provee dos clases para manejar sockets y su comunicacion entre ellas esta:
+
+Socket y ServerSocket.
+Ambas clases se encuentran en el paquete java.net.
+
+
+
+
+SOCKETS CLIENTE
+
+Para crear un socket y una conexion se usa el siguiente codigo
+
+Colocar las sentencias entre un try y un catch
+
+Socket miSocket = new Socket("127.0.0.1", 35000);//Donde se especifica la ip en este caso el local host o loopback y el puerto que es el 35000
+
+
+Una vez tenga la conexi´on, puede obtener flujos (Streams) de entrada y
+salida utilizando
+
+out = new PrintWriter(echoSocket.getOutputStream(), true);
+in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()));

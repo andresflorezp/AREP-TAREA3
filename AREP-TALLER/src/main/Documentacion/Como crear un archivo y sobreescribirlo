@@ -1,0 +1,24 @@
+Cuando se crea un archivo se debe hacer los siguientes pasos
+
+try {
+            String ruta = "index.html";
+            File file = new File(ruta);
+            // Si el archivo no existe es creado
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(DATA);
+            bw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+#1 Como primer paso se debe crear la ruta para especificar donde se quiere guardar
+#2 Se crea un Objeto File y se manda como parametro la ruta
+#3 Se pregunta si el archivo ya existe como ya se le asocio la ruta el sabe si esta creado si no existe se creara si no se escribira
+#4 Luego Se crea el metodo FileWriter eso permitira escribir en el archivo y se manda como parametro el objeto File creado anteriormente
+#5 Luego de esto usaremos BufferedWriter y mandaremos filewriter como parametro
+#6 Metermos los datos en el archivo con el metodo writer
+# Cerramos el buffer

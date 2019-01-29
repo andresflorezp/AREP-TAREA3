@@ -1,0 +1,13 @@
+Algunas clases que utilizan TCP son
+* URL,
+* URLConnection,
+* Socket
+* ServerSocket.
+Todas estan en el paquete java.net.
+
+
+Algunas clases que se utilizan para UDP son
+* DatagramPacket,
+* DatagramSocket
+* MulticastSocket .
+Todas estan en el paquete java.net.
